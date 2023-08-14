@@ -25,6 +25,31 @@ concurrency:
 
 jobs:
   # Build job
+  buildGhPage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+      # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn # or pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Install dependencies
+        run: yarn install # or pnpm install / yarn install
+      - name: Build with VitePress
+        run: yarn docs:build-gh-page # or pnpm docs:build / yarn docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: docs/.vitepress/dist
+
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -44,10 +69,6 @@ jobs:
         run: yarn install # or pnpm install / yarn install
       - name: Build with VitePress
         run: yarn docs:build # or pnpm docs:build / yarn docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: docs/.vitepress/dist
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:

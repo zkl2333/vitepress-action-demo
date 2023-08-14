@@ -1,7 +1,9 @@
+const base = process.env.BUILD_BASE || "/";
+
 module.exports = {
   title: "VitePress",
   description: "Just playing around.",
-  base: "/vitepress-action-demo/",
+  base: base,
   cleanUrls: true,
   markdown: {
     lineNumbers: true,
