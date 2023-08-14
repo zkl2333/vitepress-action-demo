@@ -1,49 +1,50 @@
 module.exports = {
   title: "VitePress",
   description: "Just playing around.",
+  base: "/vitepress-action-demo/",
   cleanUrls: true,
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
   },
   themeConfig: {
     search: {
-      provider: 'local'
+      provider: "local",
     },
-    outline: 'deep',
+    outline: "deep",
     nav: [
       {
-        text: '首页',
-        link: '/'
+        text: "首页",
+        link: "/",
       },
       {
-        text: '开始',
-        link: '/repo/'
-      }
+        text: "开始",
+        link: "/repo/",
+      },
     ],
     sidebar: [
       {
-        text: 'Start',
-        link: '/repo/',
+        text: "Start",
+        link: "/repo/",
       },
       {
-        text: '目录1',
+        text: "目录1",
         items: [
           {
-            text: '页面1',
-            link: '/repo/page1'
+            text: "页面1",
+            link: "/repo/page1",
           },
           {
-            text: '页面2',
-            link: '/repo/page2'
-          }
-        ]
-      }
+            text: "页面2",
+            link: "/repo/page2",
+          },
+        ],
+      },
     ],
     socialLinks: [
       {
-        icon: 'github',
-        link: 'https://github.com/htnanako/'
-      }
-    ]
+        icon: "github",
+        link: "https://github.com/htnanako/",
+      },
+    ],
   },
 };
