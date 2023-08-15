@@ -1,4 +1,9 @@
-# page2
+---
+title: page2
+sidebar: false
+navbar: false
+---
+# page3
 
 ## 本页禁用导航栏
 
