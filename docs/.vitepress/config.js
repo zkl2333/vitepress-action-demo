@@ -1,4 +1,4 @@
-const base = process.env.BUILD_BASE || "/";
+const base = process.env.BUILD_BASE || "/docs/";
 
 module.exports = {
   title: "VitePress",
@@ -9,39 +9,36 @@ module.exports = {
     lineNumbers: true,
   },
   head: [
-    ['link', { rel: 'icon', href: '/vitepress-logo-mini.svg' }],
-    ['meta', { name: 'theme-color', content: '#5f67ee' }],
+    ['link', { rel: 'manifest', href: base+'manifest_'+base.replace(/\//g, '')+'.json' }],
+    ['link', { rel: 'icon', href: base+'vitepress-logo-mini.svg' }],
+    ['meta', { name: 'theme-color', content: '#1e1e20' }],
     ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'og:site_name', content: 'VitePress' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    // ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
   ],
   themeConfig: {
     logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
     search: {
-      provider: 'algolia',
-      options: {
-        appId: '8J64VVRP8K',
-        apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-        indexName: 'vitepress'
-      }
+      provider: "local",
     },
     outline: "deep",
     nav: nav(),
-    sidebar: {
-      '/repo/': { base: '/repo/', items: sidebarGuide() },
-    },
+    sidebar: sidebarGuide(),
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      copyright: 'Copyright © 2023-present · Alano'
     },
-    editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
-    },
+    // editLink: {
+    //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+    //   text: 'Edit this page on GitHub'
+    // },
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/htnanako/",
+        link: "https://github.com/Alano-i?tab=repositories",
       },
     ],
   },
@@ -49,34 +46,48 @@ module.exports = {
 
 function nav() {
   return [
-    {
-      text: 'Guide',
-      link: '/repo/',
-      activeMatch: '/repo/'
-    },
-    {
-      text: 'Google',
-      link: 'http://www.google.com'
-    }
+    { text: "首页", link: "/" },
+    { text: "文档", link: "/contents/" },
+    { text: "Guide", link: "https://vitepress.dev/guide/markdown" },
   ]
 }
 
 function sidebarGuide() {
   return [
     {
-      text: '标题1',
+      text: '目录',
+      base: '/contents',
+      link: '/'
+    },
+    {
+      text: 'Mbot 插件',
       collapsed: false,
+      base: '/mbot/',
       items: [
-        { text: 'page1', link: 'page1' },
+        { text: '有声书工具箱', link: 'audio_tools/' },
+        { text: '每天60秒读懂世界', link: 'daily_news/' },
+        { text: 'Plex通知', link: 'plex_notify/' },
+        { text: 'Plex工具箱', link: 'plex_tools/' },
       ]
     },
     {
-      text: '标题2',
-      collapsed: true,
+      text: 'NAS',
+      collapsed: false,
+      base: '/nas/',
       items: [
-        { text: 'page2', link: 'page2' },
-        { text: 'page3', link: 'page3' }
+        { text: '常用 Docker 部署', link: 'docker/' },
+        { text: 'Traefik Docker', link: 'traefik_docker/' },
+        { text: 'Alist 美化', link: 'alist_diy/' },
+        { text: 'Transmission 制作种子', link: 'Transmission制作种子/' },
       ]
-    }
+    },
+    {
+      text: '媒体影音',
+      collapsed: false,
+      base: '/media/',
+      items: [
+        { text: 'Apple TV Infuse', link: 'infuse/' },
+      ]
+    },
   ]
 }

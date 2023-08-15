@@ -2,16 +2,16 @@
 layout: home
 
 hero:
-  name: Hello Vitepress
-  text: Vitepress 演示页
-  tagline: 我最可爱，给我打钱
+  name: Vitepress
+  text: 收集整理的各类文档
+  tagline: 教程、说明文档，以及一些日常笔记。
   actions:
     - theme: brand
-      text: Get Started
-      link: /repo/
+      text: 立即查看
+      link: /contents/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/htnanako/vitepress-action-demo
+      link: https://github.com/zkl2333/vitepress-action-demo
   image:
     src: /vitepress-logo-large.webp
     alt: VitePress

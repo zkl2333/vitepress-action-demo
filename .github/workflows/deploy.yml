@@ -96,7 +96,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         if: env.FTP_SERVER && env.FTP_USERNAME && env.FTP_PASSWORD
         with:
-          server-dir: /
+          server-dir: ${{ vars.FTP_DIR }}
           server: ${{ env.FTP_SERVER }}
           username: ${{ env.FTP_USERNAME }}
           password: ${{ env.FTP_PASSWORD }}
