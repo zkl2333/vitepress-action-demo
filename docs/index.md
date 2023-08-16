@@ -40,7 +40,7 @@ features:
 
   --vp-c-brand: #10b981;
   --vp-c-text-code: #10b981;
-  --vp-c-mute: rgba(109, 109, 109, 0.1);
+  --vp-c-mute: rgba(109, 109, 109, 0.18);
   --vp-button-brand-bg: #059669;
   --vp-button-brand-hover-bg: #047857;
   --vp-button-brand-hover-border: #059669;
@@ -49,8 +49,8 @@ features:
 }
 :root .dark{
   --vp-c-mute: #ff0000;
-  --vp-c-brand: #10b981;
-  --vp-c-text-code: #34cb94;
+  --vp-c-text-code: #fff000;
+  /* --vp-c-text-code: #34cb94; */
 }
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
