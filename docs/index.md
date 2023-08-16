@@ -47,6 +47,11 @@ features:
   --vp-button-brand-active-bg: #047051;
   --vp-button-brand-active-border: #34d399;
 }
+:root .dark{
+  --vp-c-mute: rgba(109, 109, 109, 0.1);
+  --vp-c-brand: #10b981;
+  --vp-c-text-code: #10b981;
+}
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
   padding-top: 5px !important;
