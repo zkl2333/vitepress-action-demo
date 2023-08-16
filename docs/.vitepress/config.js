@@ -77,36 +77,33 @@ function sidebarGuide() {
       link: '/'
     },
     {
-      text: '分类1',
+      text: 'Mbot 插件',
       collapsed: false,
-      base: '/分类1/',
+      base: '/mbot/',
       items: [
-        { text: '页面1', link: '页面1/' },
-        { text: '页面2', link: '页面2/' },
-        { text: '页面3', link: '页面3/' },
-
+        { text: '有声书工具箱', link: 'audio_tools/' },
+        { text: '每天60秒读懂世界', link: 'daily_news/' },
+        { text: 'Plex通知', link: 'plex_notify/' },
+        { text: 'Plex工具箱', link: 'plex_tools/' },
       ]
     },
     {
-      text: '分类2',
+      text: 'NAS',
       collapsed: false,
-      base: '/分类2/',
+      base: '/nas/',
       items: [
-        { text: '页面1', link: '页面1/' },
-        { text: '页面2', link: '页面2/' },
-        { text: '页面3', link: '页面3/' },
-
+        { text: '常用 Docker 部署', link: 'docker/' },
+        { text: 'Traefik Docker', link: 'traefik_docker/' },
+        { text: 'Alist 美化', link: 'alist_diy/' },
+        { text: 'Transmission 制作种子', link: 'Transmission制作种子/' },
       ]
     },
     {
-      text: '分类3',
+      text: '媒体影音',
       collapsed: false,
-      base: '/分类3/',
+      base: '/media/',
       items: [
-        { text: '页面1', link: '页面1/' },
-        { text: '页面2', link: '页面2/' },
-        { text: '页面3', link: '页面3/' },
-
+        { text: 'Apple TV Infuse', link: 'infuse/' },
       ]
     },
   ]
