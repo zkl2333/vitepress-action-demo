@@ -48,7 +48,7 @@ features:
   --vp-button-brand-active-border: #34d399;
 }
 html.dark{
-  --vp-c-mute: #303030;
+  --vp-c-mute: #2e2e2e;
   --vp-c-text-code: #34cb94;
 }
 .VPHero.has-image.VPHomeHero .tagline {
