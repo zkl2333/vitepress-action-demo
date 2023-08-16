@@ -26,6 +26,7 @@ module.exports = {
       --vp-button-brand-bg: #059669;
       --vp-button-brand-hover-bg: #047857;
       --vp-button-brand-hover-border: #059669;
+      --vp-button-brand-active-bg: #047051;
       --vp-button-brand-active-border: #34d399;
     }
     `]
