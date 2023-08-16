@@ -1,0 +1,15 @@
+{
+  "short_name": "文档库",
+  "name": "文档库",
+  "icons": [
+    {
+      "src": "/vitepress-action-demo/icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#1e1e20",
+  "background_color": "#000000"
+}

@@ -2,16 +2,16 @@
 layout: home
 
 hero:
-  name: Hello Vitepress
-  text: Vitepress 演示页
-  tagline: 我最可爱，给我打钱
+  name: Vitepress
+  text: 文档库演示页 DEMO
+  tagline: 教程、说明文档，以及一些日常笔记。
   actions:
     - theme: brand
-      text: Get Started
-      link: /repo/
+      text: 立即查看
+      link: /contents/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/htnanako/vitepress-action-demo
+      link: https://github.com/zkl2333/vitepress-action-demo
   image:
     src: /vitepress-logo-large.webp
     alt: VitePress
@@ -37,17 +37,47 @@ features:
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(40px);
+
+  --vp-c-brand: #10b981;
+  --vp-c-text-code: #10b981;
+  --vp-c-mute: rgba(109, 109, 109, 0.1);
+  --vp-button-brand-bg: #059669;
+  --vp-button-brand-hover-bg: #047857;
+  --vp-button-brand-hover-border: #059669;
+  --vp-button-brand-active-bg: #047051;
+  --vp-button-brand-active-border: #34d399;
+}
+html.dark{
+  --vp-c-mute: #2d2d2d;
+  --vp-c-text-code: #34cb94;
+}
+
+.VPHero.has-image.VPHomeHero .tagline {
+  font-weight: 300 !important;
+  padding-top: 2px !important;
+}
+.VPHero.has-image.VPHomeHero .text {
+  line-height: 47px !important;
+  letter-spacing: 0 !important;
 }
 
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
+  .VPHero.has-image.VPHomeHero .text {
+    line-height: 68px !important;
+    letter-spacing: 0 !important;
+  }
 }
 
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(72px);
+  }
+  .VPHero.has-image.VPHomeHero .text {
+    line-height: 77px !important;
+    letter-spacing: 0 !important;
   }
 }
 </style>
