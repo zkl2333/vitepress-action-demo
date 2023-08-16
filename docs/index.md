@@ -37,6 +37,7 @@ features:
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(40px);
+
   --vp-c-brand: #10b981;
   --vp-c-text-code: #34cb94;
   --vp-c-mute: #2e2e2e;
@@ -49,8 +50,9 @@ features:
 .tagline {
   font-weight: 300 !important;
 }
-.text {
+.text[data-v-da5d1713] {
   line-height: 75px !important;
+  letter-spacing: 0 !important;
 }
 
 @media (min-width: 640px) {
