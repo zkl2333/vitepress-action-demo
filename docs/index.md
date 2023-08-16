@@ -52,12 +52,21 @@ html.dark{
   --vp-c-text-code: #34cb94;
 }
 
+.VPHero.has-image.VPHomeHero .tagline {
+  font-weight: 300 !important;
+  padding-top: 5px !important;
+}
+.VPHero.has-image.VPHomeHero .text {
+  line-height: 64px !important;
+  letter-spacing: 0 !important;
+}
+
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
   .VPHero.has-image.VPHomeHero .text {
-    line-height: 66px !important;
+    line-height: 68px !important;
     letter-spacing: 0 !important;
   }
 }
@@ -65,10 +74,6 @@ html.dark{
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(72px);
-  }
-  .VPHero.has-image.VPHomeHero .tagline {
-    font-weight: 300 !important;
-    padding-top: 5px !important;
   }
   .VPHero.has-image.VPHomeHero .text {
     line-height: 77px !important;
