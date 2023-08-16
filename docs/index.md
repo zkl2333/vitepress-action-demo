@@ -39,10 +39,10 @@ features:
   --vp-home-hero-image-filter: blur(40px);
 }
 .tagline {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 .text {
-  line-height: 75px;
+  line-height: 75px !important;
 }
 
 @media (min-width: 640px) {
