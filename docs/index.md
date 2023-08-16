@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Vitepress
-  text: 收集整理的各类文档
+  text: 文档库演示页 Demo
   tagline: 教程、说明文档，以及一些日常笔记。
   actions:
     - theme: brand
@@ -39,17 +39,13 @@ features:
   --vp-home-hero-image-filter: blur(40px);
 
   --vp-c-brand: #10b981;
-  --vp-c-text-code: #10b981;
-  --vp-c-mute: rgba(109, 109, 109, 0.1);
+  --vp-c-text-code: #34cb94;
+  --vp-c-mute: #2e2e2e;
   --vp-button-brand-bg: #059669;
   --vp-button-brand-hover-bg: #047857;
   --vp-button-brand-hover-border: #059669;
   --vp-button-brand-active-bg: #047051;
   --vp-button-brand-active-border: #34d399;
-}
-html.dark{
-  --vp-c-mute: #2d2d2d;
-  --vp-c-text-code: #34cb94;
 }
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
