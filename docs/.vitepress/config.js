@@ -60,7 +60,7 @@ function nav() {
   return [
     { text: "首页", link: "/" },
     { text: "文档", link: "/contents/" },
-    { text: "Guide", link: "https://vitepress.dev/guide/markdown",
+    { text: "Guide",
       items: [
         { text: 'VitePress 中文网', link: 'https://vitejs.cn/vitepress/guide/markdown.html' },
         { text: '官方文档', link: 'https://vitepress.dev/guide/markdown' },
