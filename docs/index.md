@@ -39,7 +39,7 @@ features:
   --vp-home-hero-image-filter: blur(40px);
 
   --vp-c-brand: #10b981;
-  --vp-c-text-code: #34cb94;
+  --vp-c-text-code: #10b981;
   --vp-c-mute: rgba(109, 109, 109, 0.1);
   --vp-button-brand-bg: #059669;
   --vp-button-brand-hover-bg: #047857;
@@ -50,7 +50,7 @@ features:
 :root .dark{
   --vp-c-mute: rgba(109, 109, 109, 0.2);
   --vp-c-brand: #10b981;
-  --vp-c-text-code: #10b981;
+  --vp-c-text-code: ##34cb94;
 }
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
