@@ -18,18 +18,6 @@ module.exports = {
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     // ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
-    ['style', {}, `
-    :root {
-      --vp-c-brand: #10b981;
-      --vp-c-text-code: #34cb94;
-      --vp-c-mute: #2e2e2e;
-      --vp-button-brand-bg: #059669;
-      --vp-button-brand-hover-bg: #047857;
-      --vp-button-brand-hover-border: #059669;
-      --vp-button-brand-active-bg: #047051;
-      --vp-button-brand-active-border: #34d399;
-    }
-    `]
   ],
   themeConfig: {
     logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },

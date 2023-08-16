@@ -37,6 +37,14 @@ features:
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(40px);
+  --vp-c-brand: #10b981;
+  --vp-c-text-code: #34cb94;
+  --vp-c-mute: #2e2e2e;
+  --vp-button-brand-bg: #059669;
+  --vp-button-brand-hover-bg: #047857;
+  --vp-button-brand-hover-border: #059669;
+  --vp-button-brand-active-bg: #047051;
+  --vp-button-brand-active-border: #34d399;
 }
 .tagline {
   font-weight: 300 !important;
