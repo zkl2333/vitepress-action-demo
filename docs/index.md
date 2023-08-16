@@ -40,7 +40,7 @@ features:
 
   --vp-c-brand: #10b981;
   --vp-c-text-code: #34cb94;
-  --vp-c-mute: rgba(109, 109, 109, 0.2);
+  --vp-c-mute: rgba(109, 109, 109, 0.1);
   --vp-button-brand-bg: #059669;
   --vp-button-brand-hover-bg: #047857;
   --vp-button-brand-hover-border: #059669;
@@ -48,7 +48,7 @@ features:
   --vp-button-brand-active-border: #34d399;
 }
 :root .dark{
-  --vp-c-mute: rgba(109, 109, 109, 0.1);
+  --vp-c-mute: rgba(109, 109, 109, 0.2);
   --vp-c-brand: #10b981;
   --vp-c-text-code: #10b981;
 }
