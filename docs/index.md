@@ -47,11 +47,12 @@ features:
   --vp-button-brand-active-bg: #047051;
   --vp-button-brand-active-border: #34d399;
 }
-.tagline {
+.VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
+  padding-top: 0 !important;
 }
-.text[data-v-da5d1713] {
-  line-height: 75px !important;
+.VPHero.has-image.VPHomeHero .text {
+  line-height: 77px !important;
   letter-spacing: 0 !important;
 }
 
