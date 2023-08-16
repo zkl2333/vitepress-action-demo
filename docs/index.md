@@ -60,6 +60,10 @@ features:
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
+  .VPHero.has-image.VPHomeHero .text {
+    line-height: 50px !important;
+    letter-spacing: 0 !important;
+  }
 }
 
 @media (min-width: 960px) {
