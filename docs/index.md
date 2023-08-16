@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Vitepress
-  text: 收集整理的各类文档
+  text: 文档库演示页
   tagline: 教程、说明文档，以及一些日常笔记。
   actions:
     - theme: brand

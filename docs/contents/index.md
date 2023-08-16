@@ -1,20 +1,21 @@
 # :closed_book: 目录
 
 收集整理的各类文档，教程，说明文档，以及一些日常笔记。
-## Mbot插件
-- [有声书工具箱](../mbot/audio_tools/)
-- [每天60秒读懂世界](../mbot/daily_news/)
-- [Plex通知](../mbot/plex_notify/)
-- [Plex工具箱](../mbot/plex_tools/)
+## 分类1
+- [页面1](../分类1/页面1/)
+- [页面2](../分类1/页面2/)
+- [页面3](../分类1/页面3/)
 
-## Nas
-- [常用 Docker 部署](../nas/docker/)
-- [Traefik Docker](../nas/traefik_docker/)
-- [Alist 美化](../nas/alist_diy/)
-- [Transmission 制作种子](../nas/Transmission制作种子/)
 
-## 媒体影音
-- [Apple TV Infuse](../media/infuse/)
+## 分类2
+- [页面1](../分类2/页面1/)
+- [页面2](../分类2/页面2/)
+- [页面3](../分类2/页面3/)
+
+## 分类3
+- [页面1](../分类3/页面1/)
+- [页面2](../分类3/页面2/)
+- [页面3](../分类3/页面3/)
 #
 ::: info
 This is an info box.
@@ -36,6 +37,3 @@ This is a dangerous warning.
 This is a details block.
 :::
 
-
-## 如果觉得好用的话可以请我喝杯咖啡
-<div align=left><img src="/coffee.png" width="150" /></div>
