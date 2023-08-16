@@ -54,10 +54,10 @@ html.dark{
 
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
-  padding-top: 5px !important;
+  padding-top: 2px !important;
 }
 .VPHero.has-image.VPHomeHero .text {
-  line-height: 64px !important;
+  line-height: 47px !important;
   letter-spacing: 0 !important;
 }
 
