@@ -48,7 +48,7 @@ features:
   --vp-button-brand-active-border: #34d399;
 }
 :root .dark{
-  --vp-c-mute: rgba(109, 109, 109, 0.2);
+  --vp-c-mute: #2e2e2e;
   --vp-c-brand: #10b981;
   --vp-c-text-code: ##34cb94;
 }
