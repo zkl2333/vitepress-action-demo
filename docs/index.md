@@ -49,7 +49,7 @@ features:
 }
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
-  padding-top: 0 !important;
+  padding-top: 5px !important;
 }
 .VPHero.has-image.VPHomeHero .text {
   line-height: 77px !important;
