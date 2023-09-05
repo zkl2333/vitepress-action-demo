@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.10"
   },
   "volta": {
     "node": "18.17.1"
