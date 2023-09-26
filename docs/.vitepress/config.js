@@ -1,17 +1,19 @@
 const base = process.env.BUILD_BASE || "/docs/";
 
 module.exports = {
+  lang: 'zh_CN',
   title: "VitePress",
   description: "Just playing around.",
   base: base,
   cleanUrls: true,
+  lastUpdated: true, // 上次更新时间
   markdown: {
     lineNumbers: true,
   },
   head: [
     ['link', { rel: 'manifest', href: base+'manifest_'+base.replace(/\//g, '')+'.json' }],
     ['link', { rel: 'icon', href: base+'vitepress-logo-mini.svg' }],
-    ['meta', { name: 'theme-color', content: '#1e1e20' }],
+    ['meta', { name: 'theme-color', content: '#1b1b1f' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'og:site_name', content: 'VitePress' }],
@@ -32,16 +34,29 @@ module.exports = {
     // `]
   ],
   themeConfig: {
+    siteTitle: '文档库',
+    lastUpdated: {
+      text: '更新时间',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
     logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
     search: {
       provider: "local",
     },
-    outline: "deep",
+    returnToTopLabel: '返回顶部',
+    sidebarMenuLabel: '所有文章',
+    outline: {
+      level: "deep",
+      label: '本文目录'  // 自定义 "On this page" 为 "本文目录"
+    },
     nav: nav(),
     sidebar: sidebarGuide(),
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present · Alano'
+      copyright: 'Copyright © 2023-present'
     },
     // editLink: {
     //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
