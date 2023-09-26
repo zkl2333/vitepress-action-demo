@@ -1,4 +1,6 @@
 const base = process.env.BUILD_BASE || "/docs/";
+import  pkg from "../../package.json";
+const vitepressVersion = pkg.devDependencies.vitepress.replace('^', '');
 
 module.exports = {
   lang: 'zh_CN',
@@ -11,6 +13,7 @@ module.exports = {
     lineNumbers: true,
   },
   head: [
+    ['meta', { name: 'vertion', content: vitepressVersion }],
     ['link', { rel: 'manifest', href: base+'manifest_'+base.replace(/\//g, '')+'.json' }],
     ['link', { rel: 'icon', href: base+'vitepress-logo-mini.svg' }],
     ['meta', { name: 'theme-color', content: '#1b1b1f' }],
@@ -55,7 +58,7 @@ module.exports = {
     nav: nav(),
     sidebar: sidebarGuide(),
     footer: {
-      message: 'Released under the MIT License.',
+      message: 'Released under the MIT License. Based on Vitepress '+vitepressVersion,
       copyright: 'Copyright © 2023-present'
     },
     // editLink: {
