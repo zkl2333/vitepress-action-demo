@@ -1,5 +1,5 @@
 const base = process.env.BUILD_BASE || "/docs/";
-import  pkg from "../../package.json";
+import pkg from "../../package.json";
 const vitepressVersion = pkg.devDependencies.vitepress.replace('^', '');
 
 module.exports = {
