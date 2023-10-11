@@ -37,10 +37,17 @@ features:
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-home-hero-image-filter: blur(40px);
-
+  /* rc.4 */
   --vp-c-brand: #10b981;
   --vp-c-text-code: #10b981;
   --vp-c-mute: rgba(109, 109, 109, 0.1);
+
+  /* rc.10 */
+  --vp-c-indigo-1: #25ba89;
+  --vp-c-indigo-2: #26bf8c;
+  --vp-c-indigo-3: #29cc96;
+  --vp-c-brand-soft: rgba(16, 185, 129, 0.16);
+  --vp-c-indigo-soft: rgba(16, 185, 129, 0.2);
   --vp-button-brand-bg: #059669;
   --vp-button-brand-hover-bg: #047857;
   --vp-button-brand-hover-border: #059669;
@@ -52,6 +59,36 @@ html.dark{
   --vp-c-text-code: #34cb94;
 }
 
+/* 统一图片样式 */
+.vp-doc img {
+  /* border: 1px solid rgba(255, 255, 255, 0.11) !important; */
+  border-radius: 13px !important;
+  /* box-shadow: 0 13px 20px rgba(0, 0, 0, 0.13) !important; */
+  /* margin-top: 12px !important;
+  margin-bottom: 12px !important; */
+}
+
+.base_img {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  border-radius: 13px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+}
+
+.base_img::after {
+  content: "";
+  display: block;
+  border-radius: 13px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px 1px rgb(255 255 255 / 8%);
+}
+
 .VPHero.has-image.VPHomeHero .tagline {
   font-weight: 300 !important;
   padding-top: 2px !important;
@@ -59,6 +96,14 @@ html.dark{
 .VPHero.has-image.VPHomeHero .text {
   line-height: 47px !important;
   letter-spacing: 0 !important;
+}
+.VPImage.image-src {
+  top: 50% !important;
+}
+
+/*选中文字*/
+::selection {
+    background: rgba(16, 185, 129, 0.16) !important;
 }
 
 @media (min-width: 640px) {
@@ -69,6 +114,9 @@ html.dark{
     line-height: 68px !important;
     letter-spacing: 0 !important;
   }
+  .VPImage.image-src {
+    top: 55% !important;
+  }
 }
 
 @media (min-width: 960px) {
@@ -76,8 +124,11 @@ html.dark{
     --vp-home-hero-image-filter: blur(72px);
   }
   .VPHero.has-image.VPHomeHero .text {
-    line-height: 77px !important;
+    line-height: 88px !important;
     letter-spacing: 0 !important;
+  }
+  .VPImage.image-src {
+    top: 58% !important;
   }
 }
 </style>
